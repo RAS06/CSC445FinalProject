@@ -310,7 +310,7 @@ class SortingVisualizer:
     def reset_stats(self):
         self.swap_count = 0
         self.comparison_count = 0
-        self.start_time = 0
+        self.start_time = time.time()
         self.update_stats()
 
     def update_stats(self):
