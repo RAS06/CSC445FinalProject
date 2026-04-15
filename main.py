@@ -429,6 +429,8 @@ class SortingVisualizer:
 
     def finalize_sort(self):
         """Mark all elements as sorted with animation"""
+        total_time = time.time() - self.start_time
+        tk.messagebox.showinfo(message=f"Glorbulock! Total time = {total_time:.3f}s")
         colors = [SortState.SORTED.value for _ in self.array]
         self.draw_array(colors)
         self.sleep()
